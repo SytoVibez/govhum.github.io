@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <div id="Header-gov">
+        <img src="GovWeb/images/Gov.co.png" alt="">
+    </div>
+    <div class="header-logo">
+        <div id="head2">
+            <img src="/GovWeb/images/Sistema_Facturacion_Logo.png" alt="" height="40">
+            <div class="head-line"></div>
+            <a href=""><img src="/GovWeb/images/Dian_logo_sin_texto.jpg" alt="" height="40"></a>
+        </div>
+    </div>
+            <div class=" bhoechie-tab-container">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item active text-center">
+                      <img src="/GovWeb/images/Administrator.png" alt="" class="admin-img"><br/>Administrador
+                    </a>
+                    <a href="#" class="list-group-item text-center">
+                      <img src="/GovWeb/images/Company.png" alt="" class="admin-img"><br/>Empresa
+                    </a>
+                    <a href="#" class="list-group-item text-center">
+                      <img src="/GovWeb/images/Person.png" alt="" class="admin-img"><br>Persona
+                    </a>
+                    <a href="#" class="list-group-item text-center">
+                      <img src="/GovWeb/images/NotObligued.png" alt="" class="admin-img"></h4><br/>No Facturador
+                    </a>
+                    <a href="#" class="list-group-item text-center">
+                      <img src="/GovWeb/images/Certificate.png" alt="" class="admin-img"><br/>Buscar Documento
+                    </a>
+                    <a href="" class="list-group-item text-center">
+                      <img src="/GovWeb/images/SearchDocument.png" alt="" class="admin-img"><br>Buscar Documento
+                    </a>
+                    
+                  </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+                    <!-- flight section -->
+                    <div class="bhoechie-tab-content active">
+                      <span class="sub-title">Iniciar sesión</span>
+                      <p class="mt-28">Por favor diligencia los siguientes datos:</p>
+                  
+                      <form method="post" action="/User/Login" style="margin-top: 20px;">
+                          <input name="__RequestVerificationToken" type="hidden" value="uLZD5EmpMEoWDt2cWaLTg_cF2yFR9v0_AjIJIEtJ2aqp2BmW1pcQFQQyTQb_14RdulOMNs9BLIhYVJVkYCbTpfiqxpwM-rGTkywt40Xttug1">
+                          <input class="RecaptchaToken" id="AdminRecaptchaToken" name="RecaptchaToken" type="hidden" value="03ADUVZwD2D0r9JcSGmJQznVquCoC9Rxx2Jb3sJvAlw9GigdHH8UNKUWaEYLrV5hiFJCZMRCmEaup2C_U7AZgoTvZe1lHJX3nA2iEfO8zWAUG3XbX2Vj3APOHF13J-uGFL4SX_jxhg-NjY00a_hxAUqG4t62rQ0tkz9NMEAf1JTmKXFlakGaMaZ1c3P2mVhHQ_nRkKOcg2ya_mjrsQfFFJ_V_x8qKcYTod9TeY7g2d7iB9cq5IM8RopW6QD4DyjD02m--nljT8jAC4mjpN9DNU2KeOuHFtsfzczySVmVKMMlxovZtf82-4DI4dajSm2yX98HELUQt50_YrVvaVvKIXjXlOdy6Kg0Ty6wBFJkwUqZFqzY3WvhMs8F-oR6QOe8R1f18o-Q7kujtenrryv0JYetl0van9umF9tyr_LPTIgM_3yh6jfh_1T0Pz2LOFKHY6htFAiouL6c4JLViYJ6KhozJEqJfT9j8Z54oOaA-v1EcU25Ce0WSMwQbzxzccGeC_KDvg3xHriw-JGwDaf9uqtSwq1nz25srLYsPekaxKD99_bT1Tg37Z_nCoAxwPffMcfSAe0Ev36Gv7">
+                          <div class="form-group">
+                              <label class="control-label" for="Email">Correo electrónico</label>
+                              <input autocomplete="off" class="form-control" data-val="true" data-val-email="Correo electrónico inválido" data-val-required="El correo electrónico es requerido" id="Email" name="Email" placeholder="Escribe aquí el correo" type="text" value="">
+                              <span class="field-validation-valid " data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label" for="Password">Contraseña</label>
+                              <input autocomplete="off" class="form-control" data-val="true" data-val-required="La contraseña es requerida" id="Password" name="Password" placeholder="Ingrese la contraseña" type="password">
+                              <span class="field-validation-valid " data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                              <span class="field-validation-valid " data-valmsg-for="AdminLoginFailed" data-valmsg-replace="true"></span>
+                          </div>
+                          
+                          <button class="btn btn-primary" style="margin-top: 40px;">
+                              Entrar
+                          </button>
+                      </form>
+                  </div>
+                    <!-- train section -->
+                    <div class="bhoechie-tab-content">
+                      <div class="bhoechie-tab-content active" id="panel-form-login">
+                        <span class="sub-title">Iniciar sesión</span>
+                        <p class="mt-28">Selecciona una opción para continuar:</p>
+            
+                        <div id="menu-container">
+                            <button class="menu-button" id="legalRepresentative">
+                                <img src="/GovWeb/images/LegalRepresentative.png" height="77">
+                                Representante legal
+                            </button>
+                            <button class="menu-button" id="authorizedUser">
+                                <img src="/GovWeb/images/AuthorizedUser.png" height="77">
+                                Usuario Autorizado
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <!-- hotel search -->
+                    <div class="bhoechie-tab-content">
+                      <div class="bhoechie-tab-content active">
+                        <span class="sub-title">Iniciar sesión</span>
+                        <p class="mt-28">Por favor diligencia los siguientes datos:</p>
+                    
+                        <form method="post" action="/User/PersonAuthentication" style="margin-top: 20px;">
+                            <input name="__RequestVerificationToken" type="hidden" value="ivvhuTH9cgxS43Q0iuCcqR-GqUuVKQrql78H9EFrl9MoRZ0FoniJ0GeEwKgc9rWDgFvbZzbYL7YJc4iqxCKb2dL7p_8ninomgwBRfU0NL5g1">
+                            <input class="RecaptchaToken" id="PersonRecaptchaToken" name="RecaptchaToken" type="hidden" value="03ADUVZwBmJbgP2xJ5xztWB3xlKzGU0xbNLsjw13BQmofWymbHQ8N6kz-bZTWTzNwDvpgCD-6KXqw5QrYQgOvqlfWvMQt8wvzkbwrWwYe5gDHWkWMIwZ0bpfYsj2uo2WlfHvL5FIhya3X_cWMQriRMil9C9e3SqqNobldAMH1DdH7ZAQyLIOViQYQBioCHDxsDrS7rol-kb7juPyBFzfgGuTabWeK2dNwBTezT6K843d3uoZlfAL2okH_1Qb3NANjD-73UVg8ganNvrclJA20-2xGr3iLKpSPXNLfoD1to1gCtyvTz2-oq-RDalbwajqoUhOlvjWy4mCFoVFyp0AHiVrjV10mI8HfhAoDVIQpztqTanc9FPhIrQ1GrliWmdnsGE6VUr-_wqSJmUthI5rvEIAxthFGWdTFX_DW_Xfdx5c77gW5KyU23EYn7PmQfQkopHScwQkhAkIgp1oXb-EJYwuX2QrVF0Zhr6PvnIH2kuhmfePNrGM1b7Wiba-f-rgXwIUCmppjXPsLiu5T0b9ShJrD5GxXKmQvD5a-CBwjgrLlqzv7m0_d-4jQa8u607Yh1Uphn404akWq7">
+                            <div class="form-group">
+                                <label class="control-label" for="IdentificationType">Tipo de identificación</label>
+                                <select class="form-control selectpicker" data-val="true" data-val-number="The field Tipo de identificación must be a number." data-val-required="The Tipo de identificación field is required." id="PersonIdentificationType" name="IdentificationType"><option value="10910036">Certificado Registraduría sin identificación</option>
+                    <option value="10910092">Registro civil</option>
+                    <option value="10910093">Tarjeta de identidad</option>
+                    <option selected="selected" value="10910094">Cédula de ciudadanía</option>
+                    <option value="10910095">Tarjeta de extranjería</option>
+                    <option value="10910096">Cédula de extranjería</option>
+                    <option value="10910097">NIT</option>
+                    <option value="10910098">Pasaporte</option>
+                    <option value="10910366">Tipo de documento desconocido</option>
+                    <option value="10910394">Documento de identificación extranjero</option>
+                    <option value="10910402">Nit de otro país</option>
+                    <option value="10910403">NIUP</option>
+                    <option value="10930954">PEP</option>
+                    <option value="10930955">PPT</option>
+                    </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="PersonCode">Cédula del contribuyente</label>
+                                <input autocomplete="off" class="form-control" data-val="true" data-val-required="Cédula del contribuyente es requerido." id="PersonCode" name="PersonCode" placeholder="Ingrese la identificación del contribuyente" type="text" value="">
+                                <span class="field-validation-valid " data-valmsg-for="PersonCode" data-valmsg-replace="true"></span>
+                                <span class="field-validation-valid " data-valmsg-for="PersonLoginFailed" data-valmsg-replace="true"></span>
+                            </div>
+                    
+                            <button class="btn btn-primary" style="margin-top: 40px;">
+                                Entrar
+                            </button>
+                        </form>
+                    
+                    </div>
+                    </div>
+                    <div class="bhoechie-tab-content">
+                      <div class="bhoechie-tab-content active" id="panel-form-login">
+                        <span class="sub-title">Iniciar sesión</span>
+                        <p class="mt-28">Selecciona una opción para continuar:</p>
+        
+                        <div id="menu-container">
+                            <button class="menu-button" id="legalRepresentative">
+                                <img src="/GovWeb/images/Company.png" height="77">
+                                Empresa
+                            </button>
+                            <button class="menu-button" id="authorizedUser">
+                                <img src="/GovWeb/images/Person.png" height="77">
+                                Persona
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="bhoechie-tab-content">
+                    </div>
+                    <div class="bhoechie-tab-content">
+                      <div class="bhoechie-tab-content active">
+                        <span class="sub-title">Buscar documento</span>
+                        <p class="mt-28">Por favor diligencia los siguientes datos:</p>
+                    
+                        <form id="search-document-form" method="post" action="/User/SearchDocument" style="margin-top: 20px;">
+                            <input name="__RequestVerificationToken" type="hidden" value="HfI4Jm_JIkmLjXxPSoBkI-4OsWPrATSsNfndIreIsXYh_4tnFHl6ONKNu3Dw4zi0u2xKXC9x4exI6Cjb3hRUbfZGlgZ7H79uJ3EnoNXO9XU1">
+                            <input class="RecaptchaToken" id="RecaptchaToken" name="RecaptchaToken" type="hidden" value="03ADUVZwBPnOZ6VmOtrkX-pyE7nS_eyJjt9Xz2TsH96p86t-DAzKGcTM_COH9uUwxmk8MFwtn9DlcpySdYXQo5whIG_YOm4wysynhQ4_M_kiOtfvANxFTUCyKx3EOtTmE7pWXoX0vUsIItpYAC__IqMyVpzfLrXxICnj4O9h_fRKIoYeMsnS5wSxkGxVSJZJZIYC7XNucA8mTKARktPS8dw6_eoqcXhEeCBb7HaVcJvrqpj1LskqH16mvNrEB0qLiaw8m8Zu6RlPZgTaGsJ9X_xD5AXS5RlKZ4moU9LUsnW0n1mv_CMyXErEvjE-4HDhqUE62OLaGh1ZCxJtCqRiYtDtz2cb4eCXrWUlxsvH1eppltgkNwTdNk-UAUUvqpXdCMo7J7jYnOSWXdCt5xFjjVjenp5Lf1CWEurH_LyAik7Z7u0WcAsh7FGhruoExM6AQ3Am_3Bng6ol2SJofJTqnevMDJFUmpIKN4YbVss-jK65Z5u8v4FO7Xc20nuc4t2LkKH98c4r2lA52MmT0OryX_YeeVuIiKcFU_blCzwlhu4Czt1exB9HWN1gI">
+                            <div class="form-group">
+                                <label class="control-label" for="DocumentKey">CUFE o UUID</label>
+                                <input autocomplete="off" autofocus="" class="form-control" data-val="true" data-val-required="CUFE o UUID es requerido." id="DocumentKey" name="DocumentKey" placeholder="Ingrese el código CUFE o UUID" type="text" value="">
+                                <span class="field-validation-valid " data-valmsg-for="DocumentKey" data-valmsg-replace="true"></span>
+                            </div>
+                    
+                            <button class="btn btn-primary search-document margin-top-40">
+                                Buscar
+                            </button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+</body>
+<script src="js/main.js"></script>
+</html>
